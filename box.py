@@ -4,12 +4,14 @@
 class Box(object):
     """is a box."""
 
-    def __init__(self, isMine=False, isFlagged=False, isClicked=False, num=0):
+    def __init__(self, x=0, y=0):
         """Initialize the box."""
-        self.isMine = isMine
-        self.isFlagged = isFlagged
-        self.isClicked = isClicked
-        self.num = num
+        self.isMine = False
+        self.isFlagged = False
+        self.isClicked = False
+        self.num = 0
+        self.x = x
+        self.y = y
 
     def __str__(self):
         """Return string of object."""
